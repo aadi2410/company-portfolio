@@ -1423,6 +1423,15 @@ html {
     border: 1px solid var(--border-color);
 }
 
+.skill-item img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
 .skill-item h5 {
     margin-top: 15px;
     margin-bottom: 16px;
