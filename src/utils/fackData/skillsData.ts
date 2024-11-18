@@ -8,51 +8,51 @@ type DataType = {
 export const skillsData: DataType = [
     {
         id: 1,
-        title: "Figma",
-        img: "/images/skills/skill1.png",
+        title: "ReactJS",
+        img: "/images/skills/reactjs.png",
         progress: "99%"
     },
     {
         id: 2,
-        title: "Tailwand",
-        img: "/images/skills/skill2.png",
-        progress: "93%"
+        title: "NextJS",
+        img: "/images/skills/next.png",
+        progress: "83%"
     },
     {
         id: 3,
-        title: "Figma",
-        img: "/images/skills/skill3.png",
-        progress: "53%"
+        title: "React Native",
+        img: "/images/skills/android.png",
+        progress: "75%"
     },
     {
         id: 4,
-        title: "Figma",
-        img: "/images/skills/skill4.png",
-        progress: "74%"
-    },
-    {
-        id: 5,
-        title: "Angular",
-        img: "/images/skills/skill5.png",
+        title: "UI Development",
+        img: "/images/skills/ui-dev.png",
         progress: "95%"
     },
     {
+        id: 5,
+        title: "NodeJS",
+        img: "/images/skills/nodejs.png",
+        progress: "85%"
+    },
+    {
         id: 6,
-        title: "Webflow",
-        img: "/images/skills/skill6.png",
+        title: "Bootstrap",
+        img: "/images/skills/bootstrap.png",
         progress: "96%"
     },
     {
         id: 7,
-        title: "Python",
-        img: "/images/skills/skill6.png",
-        progress: "52%"
+        title: "Tailwind",
+        img: "/images/skills/tailwind.png",
+        progress: "92%"
     },
     {
         id: 8,
-        title: "Sketch",
-        img: "/images/skills/skill6.png",
-        progress: "84%"
+        title: "MaterialUI",
+        img: "/images/skills/mui.png",
+        progress: "94%"
     },
 
 ]
