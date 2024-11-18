@@ -12,7 +12,8 @@ const Layout = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme')
+    const currentTheme = localStorage.getItem('theme');
+    console.log(isDark,handleThemeMode('dark'))
     if (currentTheme === 'dark') {
       setIsDark(true)
       document.querySelector("body")?.classList.add('dark-version')
