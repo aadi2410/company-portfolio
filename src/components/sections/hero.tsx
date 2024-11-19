@@ -23,7 +23,7 @@ const Hero = () => {
                 <img src="/images/shape/dot-shape-circle.png" alt="Shape" />
               </div>
               <div className="hero-btns">
-                <a href="#" className="theme-btn">Hire Me <i className="far fa-angle-right" /></a>
+                <a href="#contactForm" className="theme-btn">Hire Me <i className="far fa-angle-right" /></a>
               </div>
             </SlideUp>
             {/* / END HERO DESIGN AREA */}

@@ -1,20 +1,10 @@
-import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "@components/ui/sectionTitle"
 import { useEffect, useState } from "react";
 import { portfolioData } from "@utils/fackData/portfolioData";
 import SlideUp from "@utils/animations/slideUp";
 
-const animations = [
-    { initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 } }, // Fade
-    { initial: { x: -50, opacity: 0 }, animate: { x: 0, opacity: 1 }, exit: { x: 50, opacity: 0 } }, // Slide
-    { initial: { scale: 0.9, opacity: 0 }, animate: { scale: 1, opacity: 1 }, exit: { scale: 0.9, opacity: 0 } }, // Scale
-];
-
 const Portfolio = () => {
     const [data, setData] = useState(portfolioData)
-    const [filterData, setfilterData] = useState(portfolioData)
-    const [activeTab, setActiveTab] = useState('show all');
-    const [animation, setAnimation] = useState(animations[0]);
 
     const categories: string[] = ["show all"]
 
@@ -23,19 +13,6 @@ const Portfolio = () => {
             categories.push(category.toLocaleLowerCase())
         }
     })
-
-    const handleTabSelect = (el: any) => {
-        setActiveTab(el)
-        setAnimation(animations[Math.floor(Math.random() * animations.length)]);
-
-        if (el === "show all") {
-            setfilterData(data)
-        }
-        else {
-            const x = data.filter(({ category }) => category.toLocaleLowerCase() === el)
-            setfilterData(x)
-        }
-    }
 
     useEffect(() => {
         setData(portfolioData)
@@ -51,24 +28,47 @@ const Portfolio = () => {
                             <SectionTitle.Name>Latest Works</SectionTitle.Name>
                             <SectionTitle.Title>View My Latest <span>Works</span></SectionTitle.Title>
                         </SectionTitle>
+                        <div style={{display: 'flex', gap: '12px'}}>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div style={{display: 'flex', gap: '12px'}}>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                                <div className="project-item style-two wow fadeInUp delay-0-2s" style={{flex: 1,}}>
+                                    <div className="project-image">
+                                        <img src="/images/projects/work1.jpeg" height='200px'  alt="Project" />
+                                        <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <ul className="project-filter filter-btns-one justify-content-center pb-35 wow fadeInUp delay-0-2s">
-                    {categories.map((el, index) => <li key={index} onClick={() => handleTabSelect(el)} className={`${activeTab === el ? "current" : ""} text-capitalize`}>{el}</li>)}
-                </ul>
-                <div className="row project-masonry-active">
-                    <AnimatePresence mode="wait">
-                        {filterData.map((tab) => (
-                            <motion.div
-                                key={tab.id}
-                                {...animation}
-                                transition={{ duration: 0.4 }}
-                                className="col-lg-4 col-md-6 item"
-                            >
-                                <Card category={tab.category} title={tab.title} img={tab.img} id={tab.id} />
-                            </motion.div>
-                        ))}
-                    </AnimatePresence>
                 </div>
             </div>
         </section>
@@ -77,28 +77,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
-
-type CardPropsType = {
-    title: string,
-    img: string,
-    category: string,
-    id: number
-}
-const Card = ({ img, title, category, id }: CardPropsType) => {
-    return (
-        <SlideUp delay={id}>
-            <div className="project-item style-two wow fadeInUp delay-0-2s">
-                <div className="project-image">
-                    <img src={img} alt="Project" />
-                    <a href="#" className="details-btn"><i className="far fa-arrow-right" /></a>
-                </div>
-                <div className="project-content">
-                    <span className="sub-title">{category}</span>
-                    <h3><a href="#">{title}</a></h3>
-                </div>
-            </div>
-        </SlideUp>
-    )
-}
-
 

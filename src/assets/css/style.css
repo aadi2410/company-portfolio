@@ -1361,10 +1361,12 @@ html {
 
 .service-item .content p {
     margin-bottom: 0;
+    line-height: 1.4;
+    font-size: 14px;
 }
 
 .service-item .content h4 {
-    color: var(--black-color);
+    color: white;
     font-weight: 600;
 }
 
@@ -1381,7 +1383,8 @@ html {
 }
 
 .service-item .content {
-    color: var(--black-color);
+    color: white;
+    line-height: 1.2;
 }
 
 .service-item .details-btn {
@@ -1523,18 +1526,18 @@ html {
     line-height: 1;
     display: block;
     margin-bottom: 20px;
-    color: var(--black-color);
+    color: white;
 }
 
 .resume-item .content h4 {
     margin-bottom: 5px;
-    color: var(--black-color);
+    color: white;
 }
 
 
 
 .resume-item .content .company {
-    color: var(--black-color);
+    color: white;
 }
 
 .resume-item:hover .icon {
@@ -1591,14 +1594,16 @@ html {
 }
 
 .project-item.style-two {
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 
 }
 
 .project-item.style-two .project-image {
-    margin-bottom: 18px;
+    margin-bottom: 0px;
+    border-radius: 15px;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 
 .project-item.style-two .project-image:before {

@@ -54,5 +54,29 @@ export const skillsData: DataType = [
         img: "/images/skills/mui.png",
         progress: "94%"
     },
+    {
+        id: 9,
+        title: "Git",
+        img: "/images/skills/git.png",
+        progress: "95%"
+    },
+    {
+        id: 10,
+        title: "Jira",
+        img: "/images/skills/jira.png",
+        progress: "96%"
+    },
+    {
+        id: 11,
+        title: "Bitbucket",
+        img: "/images/skills/bitbucket.png",
+        progress: "90%"
+    },
+    {
+        id: 12,
+        title: "CI/CD Pipeline",
+        img: "/images/skills/cicd.png",
+        progress: "85%"
+    },
 
 ]
