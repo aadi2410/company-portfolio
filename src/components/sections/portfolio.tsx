@@ -1,7 +1,6 @@
 import SectionTitle from "@components/ui/sectionTitle"
 import { useEffect, useState } from "react";
 import { portfolioData } from "@utils/fackData/portfolioData";
-import SlideUp from "@utils/animations/slideUp";
 
 const Portfolio = () => {
     const [data, setData] = useState(portfolioData)
