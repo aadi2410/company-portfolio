@@ -9,19 +9,19 @@ export const servicesData: DataType = [
         id: 1,
         title: "Website Developmwnt",
         icon: "fas fa-vector-square",
-        description: "Liam gives you the blocks & kits you need to create a true website within minutes."
+        description: "Craft dynamic, responsive, and user-friendly websites using the MERN stack."
     },
     {
         id: 2,
         title: "App Development",
         icon: "fas fa-yin-yang",
-        description: "Liam gives you the blocks & kits you need to create a true website within minutes."
+        description: "Build scalable and feature-rich web and mobile applications."
     },
     {
         id: 3,
         title: "Fullstack Development",
         icon: "fas fa-layer-group",
-        description: "Liam gives you the blocks & kits you need to create a true website within minutes."
+        description: "Ensure smooth integration between all layers of the stack for a cohesive user experience."
     },
 
 ]
