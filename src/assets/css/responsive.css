@@ -137,9 +137,22 @@ Version      : 1.0
         padding: 0px 10px;
     }
 
+    .skill-item h5{
+        font-size: 14px;
+    }
+
+    .skill-item img{
+        height: 80px;
+    }
+
+    .skill-item .percent{
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+
     .hero-content h1 {
-        line-height: 65px;
-        font-size: 56px;
+        line-height: 45px;
+        font-size: 40px;
     }
 
     .hero-content .dot-shape {

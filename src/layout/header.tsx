@@ -26,7 +26,7 @@ const Header = ({ isFixed }: Props) => {
                                 <div className="navbar-header">
                                     <div className="mobile-logo my-15">
                                         <Link to="/">
-                                            <img src="/images/logos/logo.png" alt="Logo" title="Logo" />
+                                            <img src="/images/logos/aaa-logo.png" width='50px' alt="Logo" title="Logo" />
                                         </Link>
                                     </div>
                                     {/* Toggle Button */}

@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="col-lg-12 col-sm-12">
             {/* START HERO DESIGN AREA */}
             <SlideUp className="hero-content rmb-25 text-center">
-              <h1>Frontend and <span>Fullstack</span> Developer</h1>
+              <h1>Frontend & <span>Fullstack</span> Developer</h1>
               <div className="dot-shape">
                 <img src="/images/shape/about-dot.png" alt="Shape" />
               </div>
@@ -31,11 +31,11 @@ const Hero = () => {
             <SlideUp delay={2}>
               <div ref={ref} className="hero-counter-area d-flex justify-content-around wow fadeInUp delay-0-4s">
                 <div className="counter-item counter-text-wrap">
-                  <span className="count-text plus">{inView && <CountUp end={4} />}</span>
+                  <span className="count-text plus">{inView && <CountUp end={6} />}</span>
                   <span className="counter-title">Years Of Experience</span>
                 </div>
                 <div className="counter-item counter-text-wrap">
-                  <span className="count-text k-plus">{inView && <CountUp end={10} />}</span>
+                  <span className="count-text k-plus">{inView && <CountUp end={20} />}</span>
                   <span className="counter-title">Complete Projects</span>
                 </div>
                 <div className="counter-item counter-text-wrap">

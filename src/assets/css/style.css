@@ -1135,7 +1135,7 @@ html {
 }
 
 .hero-content {
-    padding: 0px 250px;
+    padding: 0px 150px;
     margin-bottom: 60px;
     position: relative;
 }
@@ -1146,6 +1146,7 @@ html {
     top: 25%;
     -webkit-animation: rotated_circle linear 10s infinite;
     animation: rotated_circle linear 10s infinite;
+    filter: brightness(10);
 }
 
 .hero-content .dot-shape2 {
@@ -1154,6 +1155,7 @@ html {
     top: 60%;
     -webkit-animation: rotated_circle linear 10s infinite;
     animation: rotated_circle linear 10s infinite;
+    filter: brightness(10);
 }
 
 .hero-content h2 {
@@ -1352,10 +1354,15 @@ html {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding: 45px 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     border-radius: 15px;
     background: var(--primary-color);
+    height: 100%;
     border: 1px solid var(--border-color);
+}
+
+.service-parent-div{
+    height: 100%;
 }
 
 
@@ -1368,14 +1375,16 @@ html {
 .service-item .content h4 {
     color: white;
     font-weight: 600;
+    min-height: 52px;
 }
 
-.service-item .content i {
+.service-item .content img {
     font-size: 20px;
-    height: 60px;
-    width: 60px;
-    background: var(--black-color);
-    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+    background: white;
+    border-radius: 12px;
     color: var(--heading-color);
     text-align: center;
     line-height: 60px;

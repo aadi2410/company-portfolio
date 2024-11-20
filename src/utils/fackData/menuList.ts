@@ -15,11 +15,11 @@ export const menuList:DataType = [
         label:"about",
         path:"about"
     },
-    {
-        id:3,
-        label:"Resume",
-        path:"resume"
-    },
+    // {
+    //     id:3,
+    //     label:"Resume",
+    //     path:"resume"
+    // },
     {
         id:4,
         label:"services",

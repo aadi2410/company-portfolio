@@ -5,7 +5,7 @@ import Contact from '@components/sections/contact'
 import Hero from '@components/sections/hero'
 import Portfolio from '@components/sections/portfolio'
 // import Pricing from '@components/sections/pricing'
-import Resume from '@components/sections/resume'
+// import Resume from '@components/sections/resume'
 import Services from '@components/sections/services'
 import Skills from '@components/sections/skills'
 // import Testimonilas from '@components/sections/testimonilas'
@@ -15,7 +15,7 @@ const Home = () => {
         <main>
             <Hero />
             <About />
-            <Resume />
+            {/* <Resume /> */}
             <Services />
             <Skills />
             <Portfolio />

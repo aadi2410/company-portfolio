@@ -14,10 +14,10 @@ const Services = () => {
                         </SectionTitle>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row gap-3 gap-sm-0">
                     {
-                        servicesData.map(({ description, icon, id, title }) =>
-                            <Card key={id} description={description} icon={icon} title={title} id={id} />
+                        servicesData.map(({ description, img, id, title }) =>
+                            <Card key={id} description={description} img={img} title={title} id={id} />
                         )
                     }
                 </div>
@@ -31,17 +31,17 @@ export default Services
 
 type CardPropsType = {
     title: string,
-    icon: string,
+    img: string,
     description: string,
     id: number
 }
-const Card = ({ title, icon, description, id }: CardPropsType) => {
+const Card = ({ title, img, description, id }: CardPropsType) => {
     return (
-        <div className="col-lg-4 col-md-6">
-            <SlideUp delay={id}>
+        <div className="col-lg-3 col-sm-6">
+            <SlideUp delay={id} className='service-parent-div'>
                 <div className="service-item">
                     <div className="content">
-                        <i className={icon} />
+                        <img src={img} />
                         <h4>{title}</h4>
                         <p>{description}</p>
                     </div>
